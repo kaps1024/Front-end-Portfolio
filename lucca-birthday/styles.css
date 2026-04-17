@@ -19,6 +19,12 @@ body {
     position: relative;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative; /* Ajuda a conter elementos absolutos */
+}
+
 header {
     height: 100vh;
     background: linear-gradient(rgba(157, 177, 206, 0.5), rgba(184, 182, 179, 0.7));
