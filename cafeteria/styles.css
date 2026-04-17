@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #4E342E;
+    min-height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1 0 auto;
+}
+
+header{
+    padding: 20px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('images/beans-coffee.png');
+    background-color:#F5E9DA;
+    background-blend-mode: overlay;
+    background-repeat: repeat-x; 
+    background-position: center;
+    background-size: 35% auto;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color: #4E342E;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #6D8B74;
+    transition: 0.3s;
+}
+
+nav a.selected {
+    color: #6D8B74 !important;
+    font-weight: bold;
+}
+
+nav a:active {
+    color: #6D8B74;
+}
+
+.logo{
+    height: 150px;
+    width: auto;
+}
+
+.logo, nav {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-container {
+    display: flex;
+    align-items: stretch;
+    background: #F5E9DA;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.swiper {
+    width: 50%;
+    height: 500px;
+    margin: 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #4E342E;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn-cardapio {
+    padding: 15px 30px;
+    background: #4E342E;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-cardapio:hover {
+    background: #6d4c41;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3.5rem;
+    color: #4E342E;
+}
+
+body, p, a, nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #F5E9DA;
+    padding: 0 20px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+.footer-logo img {
+    width: auto;
+    height: 120px;
+    display: block;
+}
+
+.footer-left-group {
+    display: flex;
+    align-items: center;
+}
+
+.footer-rights {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer-rights p {
+    margin: 0;
+    line-height: 1;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.footer-socials i {
+    font-size: 30px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.footer-socials i:hover {
+    color: #6D8B74 !important;
+}
+
+.info-section {
+    margin-left: 20px;
+}
+
+.info-section h2 {
+    font-size: 1.3rem;
+}
+
+.info-section p {
+    font-size: 0.9rem;
+}
+
+body.about-us-body {
+    background: #C68B59;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #FFF8F0;
+    border-radius: 30px;
+    overflow: hidden;
+    border-style: double;
+    border-color: #6D8B74;
+    border-width: 8px;
+    
+}
+
+.about-row {
+    display: flex;
+    height: 450px;
+}
+
+.about-row:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.about-us {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.about-us h3 {
+    color: #6D8B74;
+    -webkit-text-stroke: 0.5px #6D8B74;
+}
+
+.about-us p {
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.about-photos {
+    flex: 1;
+}
+
+.about-photos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 50px;
+}
+
+body.menu-body {
+    background: #6D8B74;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #4E342E;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.cardapio-container {
+    background-color: #FFF8F0;
+    max-width: 900px;
+    width: 100%;
+    padding: 60px;
+    border: 8px dashed #C68B59;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('images/logo.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.menu-logo-top {
+    height: 200px;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-section {
+    flex: 1;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #6D8B74;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.section-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4E342E;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    color: #4E342E;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.item-price {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    
+    header {
+        height: 120px !important;
+        flex-direction: row;
+        padding: 0 20px;
+        background-size: cover;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 140px;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-row, .about-row:nth-child(2) {
+        flex-direction: column !important;
+        height: auto;
+    }
+
+    .about-photos, .about-us {
+        width: 100%;
+    }
+
+    .about-photos img {
+        padding: 20px;
+        height: 300px;
+    }
+
+    .about-us {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .footer-logo, .footer-rights, .footer-socials {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        position: static;
+        transform: none;
+        margin: 0 auto;
+        height: 120px;
+    }
+    
+    .footer-left-group {
+        order: 1; 
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-rights {
+        order: 3;
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        font-size: 0.7rem;
+        margin-top: 5px;
+        padding-top: 10px;
+    }
+
+    .footer-socials {
+        order: 2;
+    }
+
+    .hero-container {
+        flex-direction: column !important;
+        height: auto;
+    }
+
+    .swiper {
+        width: 100% !important; 
+        height: 300px; 
+        margin-bottom: 0;
+    }
+
+    .swiper-slide img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .hero-text {
+        width: 100% !important;
+        padding: 30px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+
+    .btn-cardapio {
+        width: 100%; 
+        max-width: 300px;
+        padding: 12px 20px;
+    }
+    
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        margin-left: auto;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #4E342E;
+        margin: 5px 0;
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F5E9DA;
+        position: absolute;
+        top: 120px; 
+        left: 0;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 100;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .menu-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .cardapio-container {
+        padding: 30px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+:root {
+    --swiper-navigation-color: #FFF8F0 !important;
+    --swiper-pagination-color: #FFF8F0 !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #FFF8F0 !important;
+}
+
