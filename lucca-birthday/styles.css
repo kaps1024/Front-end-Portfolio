@@ -11,20 +11,20 @@
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
+body {
+    font-family: 'Amatic SC', cursive;
+    background-color: var(--cor-secundaria);
+    color: var(--texto);
+    max-width: 1200px;
     margin: 0 auto;
     overflow-x: hidden;
     position: relative;
 }
 
-body {
-    font-family: 'Amatic SC', cursive;
-    background-color: var(--cor-secundaria);
-    color: var(--texto);
-    zoom: 0.8; 
-    -moz-transform: scale(0.8); 
-    -moz-transform-origin: top center;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 
 header {
