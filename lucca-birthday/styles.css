@@ -162,7 +162,7 @@ h2.felizAniver, h2 {
 }
 
 .grupo-homenagem {
-    width: 95%;
+    width: 85%;
     max-width: 1000px;
     margin: 0 auto 80px auto;
     display: flex;
@@ -185,7 +185,7 @@ h2.felizAniver, h2 {
 
 .container-fotos-duplas img {
     width: 100%;
-    height: 550px; 
+    height: 450px; 
     object-fit: cover;
     border-radius: 15px;
     border: 8px solid var(--detalhe-branco);
@@ -194,7 +194,7 @@ h2.felizAniver, h2 {
 
 .container-texto-story {
     width: 100%;
-    height: 500px; 
+    height: 400px; 
     overflow: hidden;
     border-radius: 15px;
     border: 8px solid var(--detalhe-branco);
@@ -218,7 +218,7 @@ h2.felizAniver, h2 {
 
 .spotify-container {
     width: 90%; 
-    max-width: 600px;
+    max-width: 500px;
     margin-top: 30px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.3);
