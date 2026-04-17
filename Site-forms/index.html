@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote seu PET</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="titulo">
+      <img src="images/titulo.png" alt="">
+
+      <nav>
+        <a href="#section-1">Entrar</a>
+        <a href="./signup.html">Cadastro</a>
+      </nav>
+    </header>
+    
+      <!-- Fiz com get pq com post não simula a mudança de página ao simular login -->
+      <!-- para ir para o forms de adoção -->
+    <div class="container">
+       <form class="login-box" method="get" action="forms.html" >
+    <h1>Acesse sua conta</h1>
+
+    <label>E-mail ou CPF/CNPJ</label>
+    <input type="text" placeholder="Digite seu e-mail ou CPF/CNPJ" required>
+
+    <label>Senha</label>
+    <input type="password" placeholder="Sua senha" required>
+
+    <button type="submit">ENTRAR</button>
+    <p class="links">
+          <a href="./forgotpassword.html">Esqueceu sua senha?</a>
+    </p>
+      </form>
+    </div>
+</body>
+</html>

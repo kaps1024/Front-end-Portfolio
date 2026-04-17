@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="titulo">
+    <img src="images/titulo.png" alt="">
+
+    <nav>
+      <a href="index.html">Entrar</a>
+      <a href="#">Cadastro</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form class="signup" action="forms.html">
+      <h1 class="signup-title">Crie sua conta</h1>
+
+      <div class="signup-item">
+        <label>Nome completo</label>
+        <input type="text" placeholder="Seu nome completo" required>
+      </div>
+
+      <div class="signup-item">
+        <label>Data de nascimento</label>
+        <input type="date" required>
+      </div>
+
+      <div class="signup-item">
+        <label>CPF/CNPJ</label>
+        <input type="text" placeholder="000.000.000-00" required>
+      </div>
+
+      <div class="signup-item">
+        <label>E-mail</label>
+        <input type="email" placeholder="seu@email.com" required>
+      </div>
+
+      <button type="submit" class="signup-btn">CADASTRAR</button>
+
+      <p class="signup-links">
+        Já tem conta? <a href="index.html">Entrar</a>
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Adoção</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="titulo">
+    <img src="images/titulo.png" alt="">
+
+    <nav>
+      <a href="index.html">Entrar</a>
+      <a href="signup.html">Cadastro</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form class="adoption-form">
+
+      <h1 class="form-title">Formulário de Adoção</h1>
+
+      <div class="form-item">
+        <label>Telefone</label>
+        <input type="text" name="telefone" placeholder="(51) 99999-9999" required>
+      </div>
+
+      <div class="form-item">
+        <label>Qual animal deseja adotar?</label>
+        <select id="animal" name="tipo_animal" required>
+          <option value="">Selecione</option>
+          <option value="gato">Gato</option>
+          <option value="cachorro">Cachorro</option>
+        </select>
+      </div>
+      
+      <div class="form-item">
+        <label>Tipo de moradia</label>
+        <select id="moradia" name="tipo_moradia">
+          <option value="">Selecione</option>
+          <option value="casa">Casa</option>
+          <option value="apartamento">Apartamento</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+
+        <div class="form-item" id="outro-moradia" style="display: none;">
+          <input type="text" name="descritivo_moradia" placeholder="Descreva sua moradia">
+        </div>
+      
+      <div id="gato-perguntas" style="display: none;">
+
+        <div class="form-item">
+          <label>Sua casa/pátio são telados?</label>
+          <select name="casa_telada">
+            <option value="">Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="form-item">
+        <label>Possui outros animais?</label>
+        <select id="outros-animais" name="possui_animais">
+          <option value="">Selecione</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </div>
+
+      <div class="form-item" id="quais-animais" style="display: none;">
+        <input type="text" name="quais_outros_animais" placeholder="Quais animais?">
+      </div>
+
+      <div class="form-item">
+        <label>Já teve animal de estimação?</label>
+        <select id="ja-teve-pet" name="ja_teve_pet">
+          <option value="">Selecione</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </div>
+
+      <div class="form-item" id="qual-animal-anterior" style="display: none;">
+        <input type="text" name="qual_pet_teve" placeholder="Qual animal você já teve?">
+      </div>
+      
+      <div class="form-item">
+        <label>Motivo da adoção</label>
+        <textarea name="motivo_adocao" placeholder="Explique por que deseja adotar..." required></textarea>
+      </div>
+      
+<div class="form-item">
+  <p class="radio-title">Você se compromete com os cuidados do animal?</p>
+  
+  <div class="radio-container">
+    <label class="radio-option">
+      <input type="radio" name="compromisso" value="sim" required>
+      Sim
+    </label>
+
+    <label class="radio-option">
+      <input type="radio" name="compromisso" value="nao">
+      Não
+    </label>
+  </div>
+</div>
+
+      <button type="submit" class="form-btn">ENVIAR</button>
+
+    </form>
+    <div id="mensagem-agradecimento" class="adoption-form" style="display: none; text-align: center;">
+      <h1 class="form-title">Inscrição Recebida!</h1>
+      <p style="margin-bottom: 20px;">Agradecemos sua inscrição! Em breve entraremos em contato no telefone informado.</p>
+      <button onclick="window.location.href='index.html'" class="form-btn">VOLTAR PARA O INÍCIO</button>
+    </div>
+  </div>
+
+  <script>
+    const animal = document.getElementById("animal");
+    const gatoPerguntas = document.getElementById("gato-perguntas");
+
+    animal.addEventListener("change", () => {
+      gatoPerguntas.style.display = animal.value === "gato" ? "block" : "none";
+    });
+
+    const moradia = document.getElementById("moradia");
+    const outroMoradia = document.getElementById("outro-moradia");
+
+    moradia.addEventListener("change", () => {
+      outroMoradia.style.display = moradia.value === "outro" ? "block" : "none";
+    });
+
+    const outrosAnimais = document.getElementById("outros-animais");
+    const quaisAnimais = document.getElementById("quais-animais");
+
+    outrosAnimais.addEventListener("change", () => {
+      quaisAnimais.style.display = outrosAnimais.value === "sim" ? "block" : "none";
+    });
+    
+    const jaTevePet = document.getElementById("ja-teve-pet");
+    const qualAnimalAnterior = document.getElementById("qual-animal-anterior");
+
+    jaTevePet.addEventListener("change", () => {
+      qualAnimalAnterior.style.display = jaTevePet.value === "sim" ? "block" : "none";
+    });
+    
+    const formAdocao = document.querySelector(".adoption-form");
+    const msgAgradecimento = document.getElementById("mensagem-agradecimento");
+
+    formAdocao.addEventListener("submit", (e) => {
+      e.preventDefault(); 
+      formAdocao.style.display = "none"; 
+      msgAgradecimento.style.display = "block"; 
+    });
+  </script>
+
+</body>
+</html>
