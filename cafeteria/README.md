@@ -1,5 +1,5 @@
 Site feito para a disciplina de Front-end
-
+https://cafeteria-da-esquina.vercel.app/
 
 Marca
 Café da Esquina
@@ -22,22 +22,22 @@ nome Café da Esquina
 estilo acolhedor e moderno
 
 Cardápio base
-Bebidas
-Espresso
-Cappuccino
-Café com leite
+Bebidas,
+Espresso,
+Cappuccino,
+Café com leite.
+
 Mocha
-Chocolate quente
-Comidas
-Croissant
-Pão de queijo
-Torta de limão
-Bolo de cenoura
-Sanduíche natural
+Chocolate quente,
+Comidas,
+Croissan,t
+Pão de queijo,
+Torta de limão,
+Bolo de cenoura,
+Sanduíche natural.
 
 Estilo da marca
-acolhedora
-artesanal
-de bairro
-
-ambiente confortável para conversar e trabalhar
+acolhedora,
+artesanal,
+de bairro,
+ambiente confortável para conversar e trabalhar.
