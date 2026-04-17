@@ -24,7 +24,7 @@ body {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    position: relative;
+    position: relative; /* Ajuda a conter elementos absolutos */
 }
 
 header {
@@ -40,12 +40,12 @@ header {
 
 header h1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 4rem;;
+    font-size: 5rem;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 section {
@@ -185,7 +185,7 @@ h2.felizAniver, h2 {
 
 .container-fotos-duplas img {
     width: 100%;
-    height: 450px; 
+    height: 550px; 
     object-fit: cover;
     border-radius: 15px;
     border: 8px solid var(--detalhe-branco);
@@ -194,7 +194,6 @@ h2.felizAniver, h2 {
 
 .container-texto-story {
     width: 100%;
-    max-width: 400px;
     height: 500px; 
     overflow: hidden;
     border-radius: 15px;
@@ -258,11 +257,6 @@ footer {
 
 @media (max-width: 768px) {
     
-    body {
-        zoom: 1.0 !important;
-        -moz-transform: scale(1.0) !important;
-    }
-    
     header h1 {
         font-size: 3rem;
         padding: 0 10px;
@@ -320,6 +314,11 @@ footer {
     .fitinha {
         animation-duration: 10s !important;
     }
+    
+    footer p{
+        font-size: 1rem !important;
+    }
+}
     
     footer p{
         font-size: 1rem !important;
