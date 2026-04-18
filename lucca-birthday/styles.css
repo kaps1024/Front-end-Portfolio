@@ -7,6 +7,8 @@
     unicode-range: U+0020-007F, U+00C0-00FF; 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
 :root {
     --cor-primaria: #9db1ce; 
     --cor-secundaria: #b8b6b3;
@@ -40,7 +42,7 @@ header {
 }
 
 header h1 {
-    font-family: 'WindSong', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 4rem;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
