@@ -14,7 +14,10 @@ function criarParticula() {
 
     p.style.left = Math.random() * 100 + 'vw';
     p.style.fontSize = Math.random() * 10 + 10 + 'px';
-    p.style.animationDuration = Math.random() * 3 + 4 + 's';
+    
+    const isMobile = window.innerWidth <= 768;
+    p.style.animationDuration = isMobile ? (Math.random() * 5 + 8) + 's' : (Math.random() * 3 + 4) + 's';
+    
     p.style.position = 'fixed';
     p.style.top = '-20px';
     
@@ -25,9 +28,10 @@ function criarParticula() {
     
     setTimeout(() => {
         p.remove();
-    }, 7000);
+    }, 15000);
 }
 
-setInterval(criarParticula, 200);
+const intervalo = window.innerWidth <= 768 ? 1000 : 300;
+setInterval(criarParticula, intervalo);
 
 
