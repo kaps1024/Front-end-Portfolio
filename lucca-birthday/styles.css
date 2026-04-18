@@ -7,8 +7,6 @@
     unicode-range: U+0020-007F, U+00C0-00FF; 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-
 :root {
     --cor-primaria: #9db1ce; 
     --cor-secundaria: #b8b6b3;
