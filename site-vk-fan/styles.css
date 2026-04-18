@@ -173,7 +173,7 @@ body {
 .groups-photo {
     width: auto%;
     max-width: 900px;
-    height: 600px;
+    height: 450px;
     object-fit: cover;
     margin: 20px 0;
     border: 3px solid #fff;
@@ -182,7 +182,7 @@ body {
 
 .bandoman {
     width: auto;
-    height: 600px;
+    height: 450px;
     object-fit: cover;
     margin: 20px 0;
     border: 3px solid #8a2be2;
@@ -194,15 +194,15 @@ h1 {
     text-shadow: 0 0 10px rgba(138, 43, 226, 0.8); 
     margin-bottom: 20px; 
     z-index: 1; 
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 h2 { 
-    font-size: 2rem; 
+    font-size: 1rem; 
 }
 
 p { 
-    font-size: 1.2rem; 
+    font-size: 1rem; 
     max-width: 600px; 
     text-align: center; 
     z-index: 1; 
