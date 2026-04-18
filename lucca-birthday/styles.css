@@ -24,8 +24,6 @@ body {
     font-family: 'CoolveticaRegular', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
     background-color: var(--cor-secundaria);
     color: var(--texto);
-    max-width: 1200px;
-    margin: 0 auto;
     overflow-x: hidden;
     position: relative;
 }
