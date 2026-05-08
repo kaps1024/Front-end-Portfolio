@@ -1,3 +1,3 @@
 Desafio da disciplina de Front-end. Um cofre secreto simples.
-secret-vault.vercel.app
+vault-re.vercel.app
 Password: 1998
