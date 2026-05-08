@@ -468,6 +468,11 @@ h1{
 
 @media (max-width: 768px){
 
+    body{
+    align-items:flex-start;
+    padding-top:40px;
+  }
+
   .panel{
     width:82%;
     max-width:280px;
