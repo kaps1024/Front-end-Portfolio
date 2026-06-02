@@ -691,12 +691,15 @@ h3 {
         margin-bottom: 15px !important;
     }
 
+    .home-glass-card h2,
+    .hero-section h2,
     .hero-content h2 {
-        font-size: 0.95rem !important;
+        font-size: 1rem !important;
         line-height: 1.5 !important;
         margin-bottom: 25px !important;
         max-width: 100% !important;
     }
+
 
 
     .btn-left-container {
