@@ -485,6 +485,12 @@ h3 {
     padding: 25px 0;
 }
 
+.footer-center .dev-by a {
+    color: inherit;
+    text-decoration: none;
+    display: inline !important;
+}
+
 .footer-container {
     position: relative;
 
