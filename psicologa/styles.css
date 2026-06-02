@@ -931,4 +931,8 @@ h3 {
     .footer-right {
         display: none;
     }
+
+     body {
+        background-color: red !important;
+    }
 }
