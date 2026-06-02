@@ -18,12 +18,20 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100vw;
 }
 
 body {
     background-color: #fafbfe;
     color: var(--text);
+    width: 100%;
+    max-width: 100vw;
     overflow-x: hidden;
+}
+
+.hero-section, .sobre-section, .especialidades-section, .contato-section {
+    overflow: hidden;
 }
 
 .container {
@@ -743,7 +751,7 @@ h3 {
     .navbar .menu {
         position: fixed;
         top: 0;
-        right: -100vw;
+        right: -100%;
         width: 75%;
         height: 100vh;
         background: rgba(255, 255, 255, 0.99);
