@@ -900,6 +900,17 @@ h3 {
         line-height: 1.5;
         position: static;
     }
+    
+    .footer-center p {
+        display: inline-block !important;
+        width: 100%;
+    }
+
+    .footer-center p strong, 
+    .footer-center p span {
+        display: inline !important;
+        white-space: nowrap !important;
+    }
 
     .footer-center {
         position: static;
