@@ -743,7 +743,7 @@ h3 {
     .navbar .menu {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -100vw;
         width: 75%;
         height: 100vh;
         background: rgba(255, 255, 255, 0.99);
