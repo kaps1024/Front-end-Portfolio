@@ -724,7 +724,7 @@ h3 {
         padding: 0 !important;
         cursor: pointer !important;
         z-index: 1001 !important;
-        margin-right: 0;
+        margin-right: 20px !important;
     }
 
     .menu-toggle span {
@@ -738,11 +738,7 @@ h3 {
     
     .navbar {
         transition: transform 0.3s ease !important;
-    }
-
-    .nav-container {
-        padding: 0 20px;
-    }
+}
 
     .navbar .menu {
         position: fixed;
