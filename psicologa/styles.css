@@ -876,7 +876,6 @@ h3 {
         align-items: center;
         justify-content: center;
         gap: 15px;
-
         height: auto;
         min-height: auto;
         max-height: none;
@@ -891,7 +890,6 @@ h3 {
     }
 
     .footer p,
-    .footer span,
     .footer div,
     .footer a {
         margin: 0 auto;
@@ -900,16 +898,16 @@ h3 {
         line-height: 1.5;
         position: static;
     }
-    
+
+    .footer-center .dev-by,
     .footer-center p {
-        display: inline-block !important;
-        width: 100%;
+        display: block !important;
+        white-space: nowrap !important; 
     }
 
-    .footer-center p strong, 
-    .footer-center p span {
+    .footer-center .dev-by strong,
+    .footer-center .dev-by span {
         display: inline !important;
-        white-space: nowrap !important;
     }
 
     .footer-center {
